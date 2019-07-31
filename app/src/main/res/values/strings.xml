@@ -20,13 +20,14 @@
     <string name="avatar">avatar</string>
     <string name="plus">Plus</string>
     <string name="ronald">Ronald</string>
-    <string name="graphiscal">Graphiscal</string>
-    <string name="jacod_burton">Jacod Burton</string>
+    <string name="graphics">Graphics design</string>
+    <string name="jacob_burton">Jacob Burton</string>
     <string name="ios_developer">IOS Developer</string>
     <string name="alice_perez">Alice Perez</string>
     <string name="ruby_developer">Ruby Developer</string>
     <string name="johny_meyer">Johny Meyer</string>
-    <string name="uiux_developer">UI/UX Developer</string>
+    <string name="ui_ux_developer">UI/UX Developer</string>
+
     <string name="andrew_gonzalez">ANDREW GONZALEZ</string>
     <string name="menu">menu</string>
     <string name="followers">FOLLOWERS</string>

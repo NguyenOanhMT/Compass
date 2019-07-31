@@ -36,10 +36,10 @@ public class Profile extends AppCompatActivity implements RecyclerItemTouchHelpe
 
         accountArrayList.add(
                 new ItemAccount(getResources().getString(R.string.ronald),
-                        getResources().getString(R.string.graphiscal),
+                        getResources().getString(R.string.graphics),
                         R.drawable.ronald_pic));
         accountArrayList.add(
-                new ItemAccount(getResources().getString(R.string.jacod_burton),
+                new ItemAccount(getResources().getString(R.string.jacob_burton),
                         getResources().getString(R.string.ios_developer),
                         R.drawable.jacob_pic));
         accountArrayList.add(
@@ -48,7 +48,7 @@ public class Profile extends AppCompatActivity implements RecyclerItemTouchHelpe
                         R.drawable.alice_pic));
         accountArrayList.add(
                 new ItemAccount(getResources().getString(R.string.johny_meyer),
-                        getResources().getString(R.string.uiux_developer),
+                        getResources().getString(R.string.ui_ux_developer),
                         R.drawable.johnny_pic));
 
         ItemAccountAdapter adapter = new ItemAccountAdapter(this, accountArrayList);
