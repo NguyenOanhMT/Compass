@@ -27,5 +27,16 @@
     <string name="ruby_developer">Ruby Developer</string>
     <string name="johny_meyer">Johny Meyer</string>
     <string name="uiux_developer">UI/UX Developer</string>
+    <string name="andrew_gonzalez">ANDREW GONZALEZ</string>
+    <string name="menu">menu</string>
+    <string name="followers">FOLLOWERS</string>
+    <string name="_506">506</string>
+    <string name="case_studies">CASE STUDIES</string>
+    <string name="_32">32</string>
+    <string name="following">FOLLOWING</string>
+    <string name="_236">236</string>
+    <string name="miami_fl_usa">MIAMI FL, USA</string>
+    <string name="product_designer">PRODUCT DESIGNER</string>
+    <string name="follow">follow</string>
 
 </resources>
