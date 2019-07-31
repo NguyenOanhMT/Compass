@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBrown"
+    tools:context=".Activity.SignUp">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="@dimen/dp20" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp20"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/dp20"
+        app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:id="@+id/tvNameActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp20"
+        android:text="@string/sign_up"
+        style="@style/TextStyle26"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+        app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <RelativeLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/dp50"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+        app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@+id/tvNameActivity">
+        <com.nguyenoanh.compass.CustomView.RounedImageView
+            android:id="@+id/imv_image"
+            android:layout_width="@dimen/dp150"
+            android:layout_height="@dimen/dp150"
+            android:background="@drawable/circle_shape"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableTop="@drawable/ic_camera_icon"
+            android:textSize="@dimen/sp14"
+            android:text="@string/up_load_an_image"/>
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/edt_firstName"
+        style="@style/TextStyle"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="@dimen/dp50"
+        android:layout_marginTop="@dimen/dp50"
+        android:background="@color/colorWhite"
+        android:padding="@dimen/dp10"
+        android:hint="@string/first_name"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+        app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@+id/linear_layout"/>
+
+    <EditText
+        android:id="@+id/edt_lastName"
+        style="@style/TextStyle"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="@dimen/dp50"
+        android:layout_marginTop="@dimen/dp20"
+        android:background="@color/colorWhite"
+        android:padding="@dimen/dp10"
+        android:hint="@string/last_name"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+        app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@+id/edt_firstName" />
+
+    <EditText
+        android:id="@+id/edt_email"
+        style="@style/TextStyle"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="@dimen/dp50"
+        android:layout_marginTop="@dimen/dp20"
+        android:background="@color/colorWhite"
+        android:padding="@dimen/dp10"
+        android:hint="@string/email"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+        app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@+id/edt_lastName" />
+
+    <EditText
+        android:id="@+id/edt_pass"
+        style="@style/TextStyle"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="@dimen/dp50"
+        android:layout_marginTop="@dimen/dp20"
+        android:background="@color/colorWhite"
+        android:padding="@dimen/dp10"
+        android:hint="@string/password"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+        app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@+id/edt_email" />
+
+    <Button
+        android:id="@+id/btn_singup"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp60"
+        android:layout_marginTop="@dimen/dp30"
+        android:layout_marginEnd="@dimen/dp60"
+        android:background="@drawable/rectangle_shape"
+        android:text="@string/sign_up"
+        android:textColor="@color/colorWhite_five"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+        app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@+id/edt_pass" />
+</android.support.constraint.ConstraintLayout>

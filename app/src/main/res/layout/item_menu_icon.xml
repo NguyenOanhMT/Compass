@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linear_menu"
+        android:layout_marginStart="@dimen/dp170"
+        android:background="@color/colorTomato"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp90"
+        android:gravity="center"
+        android:weightSum="3">
+        <ImageView
+            android:id="@+id/imv_email"
+            android:layout_width="@dimen/dp25"
+            android:layout_height="@dimen/dp25"
+            android:layout_weight="1"
+            android:src="@drawable/ic_email_icon"
+            android:contentDescription="@string/email" />
+        <ImageView
+            android:id="@+id/imv_message"
+            android:layout_width="@dimen/dp30"
+            android:layout_height="@dimen/dp30"
+            android:layout_weight="1"
+            android:src="@drawable/ic_message_icon"
+            android:contentDescription="@string/message" />
+        <ImageView
+            android:id="@+id/imv_cancel"
+            android:layout_width="@dimen/dp30"
+            android:layout_height="@dimen/dp30"
+            android:layout_weight="1"
+            android:src="@drawable/ic_close_icon"
+            android:contentDescription="@string/close" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_item_account"
+        android:background="@color/colorLight_pink"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp92">
+
+        <ImageView
+            android:id="@+id/imv_avatar"
+            android:layout_width="@dimen/dp70"
+            android:layout_height="@dimen/dp70"
+            android:layout_marginStart="@dimen/dp20"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ronald_pic"
+            android:contentDescription="@string/avatar"
+            tools:ignore="RtlHardcoded" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dp34"
+            android:layout_marginTop="@dimen/dp100"
+            android:layout_marginEnd="@dimen/dp100"
+            android:layout_marginBottom="@dimen/dp100"
+            android:layout_toEndOf="@+id/imv_avatar"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/TextStyle25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Ronald" />
+
+            <TextView
+                android:id="@+id/tv_job"
+                style="@style/TextStyle23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Graphical" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imv_plus"
+            android:layout_width="@dimen/dp30"
+            android:layout_height="@dimen/dp30"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dp70"
+            android:layout_toEndOf="@+id/linearLayout"
+            android:src="@drawable/open_icon"
+            android:contentDescription="@string/plus" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp2"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorLine" />
+    </RelativeLayout>
+</FrameLayout>

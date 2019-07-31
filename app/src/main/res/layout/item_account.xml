@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.nguyenoanh.compass.CustomView.RounedImageView
+        android:id="@+id/imv_avatar"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ronald_pic"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/imv_avatar"
+        app:layout_constraintStart_toEndOf="@+id/imv_avatar"
+        app:layout_constraintTop_toTopOf="@+id/imv_avatar">
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/TextStyle25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Ronal"/>
+
+        <TextView
+            android:id="@+id/tv_job"
+            style="@style/TextStyle23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Graphiscal" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:background="#c0bdb8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imv_avatar" />
+
+    <ImageView
+        android:id="@+id/imv_plus"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_open_icon" />
+
+</android.support.constraint.ConstraintLayout>

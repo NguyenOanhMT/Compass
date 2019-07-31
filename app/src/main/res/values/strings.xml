@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Compass</string>
+
+    <string name="sign_in">Sign In</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="remember_me">REMEMBER ME</string>
+    <string name="forgot_password"><u>FORGOT PASSWORD?</u></string>
+
+    <string name="logo">Logo</string>
+    <string name="tv_des">A Free App Template by</string>
+    <string name="paul_hershey">Paul Hershey</string>
+
+    <string name="sign_up">Sign Up</string>
+    <string name="up_load_an_image">UP LOAD AN IMAGE</string>
+    <string name="last_name">Last Name</string>
+    <string name="first_name">First Name</string>
+    <string name="message">Message</string>
+    <string name="close">Close</string>
+    <string name="avatar">avatar</string>
+    <string name="plus">Plus</string>
+    <string name="ronald">Ronald</string>
+    <string name="graphiscal">Graphiscal</string>
+    <string name="jacod_burton">Jacod Burton</string>
+    <string name="ios_developer">IOS Developer</string>
+    <string name="alice_perez">Alice Perez</string>
+    <string name="ruby_developer">Ruby Developer</string>
+    <string name="johny_meyer">Johny Meyer</string>
+    <string name="uiux_developer">UI/UX Developer</string>
+
+</resources>
