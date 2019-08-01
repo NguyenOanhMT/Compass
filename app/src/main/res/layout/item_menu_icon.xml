@@ -85,11 +85,11 @@
             android:id="@+id/imv_plus"
             android:layout_width="@dimen/dp30"
             android:layout_height="@dimen/dp30"
+            android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
-            android:layout_marginStart="@dimen/dp70"
-            android:layout_toEndOf="@+id/linearLayout"
-            android:src="@drawable/open_icon"
-            android:contentDescription="@string/plus" />
+            android:layout_marginEnd="@dimen/dp20"
+            android:contentDescription="@string/plus"
+            android:src="@drawable/open_icon" />
 
         <View
             android:id="@+id/view"
